@@ -1,0 +1,45 @@
+SOUKSAMLANE Hugo 20170320
+
+ST2TRD TP 6 : Exercise 1
+
+1. A clean code can be described as an optimized , well designed, easy to read and easily understandable code.
+By refactoring one's code, you can basically improve the code by making it cleaner, reducing the number
+of classes and other moving parts, and finally making it easier to read and maintain.
+
+2. In my opinion, yes, it is possible to "over-refactor" and to do too much, it actually happens quite
+often when I am coding (even last week's TP).
+I would say that it usually happens when the already non-refactored code's architecture is wrong,
+it means that we are basically answering the problem(s) with wrong solution, non optimized one,
+so it's obvious that trying to optimize a wrong code will lead to a wrong refactoring process.
+On the other hand, lack of experience in coding (and indirectly refactoring) can also lead to over-refactor
+because the process is not simple, it requiers some knowledges and especially a lot of practice in order
+to build programming's reflexes.
+
+3. A code smell can be considered as code's imperfection/problems.
+We should pay attention to them because they are refactoring's key and also the main problems we are 
+supposed to answer/solve by the refactoring's process.
+Some of them can be "less" important, accumulating them can lead a very messy and smelly code 
+(and obviously some problems)
+
+4. First of all, one of the main code smells in the original GuildedRose is a "Bloater",
+especially the "Long Method" named updateQuality(). 
+In addition, still in this method, the accumulation of "If" statement is an "Object-Orientation Abusers"
+code smell in the code.
+
+5. In order the reduce the number of "If" statements and make the method's features easier to understand,
+I have chosen to use a switch statement, which helped to differentiate the different Item's cases and
+how their SellIn and quality are basically evolving through days.
+An other refactoring technique that could have been use would be the "Shotgun Surgery".
+Indeed, in the Program.cs, we are instantiating Items with specific names and dectecting them in the
+updateQuality() method. But what if we try to add other Items? The method would not recognize these new names
+which mean we would have to make many small changes to the GuildedRose class.
+
+
+Exercise 2 :
+
+1. A design pattern is such a "template" which describes ways to solve/refactor/optimize codes
+that have a common problems (or code smells should I say).
+a) You should use one when your code smell(s) is common and you have some solutions on Internet.
+b) You should not use a design pattern if the problem its answering is not yours.
+It means that applying a design pattern is not always necessary and simple code can works perfectly
+sometimes.

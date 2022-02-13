@@ -39,7 +39,18 @@ Exercise 2 :
 
 1. A design pattern is such a "template" which describes ways to solve/refactor/optimize codes
 that have a common problems (or code smells should I say).
+
 a) You should use one when your code smell(s) is common and you have some solutions on Internet.
+
 b) You should not use a design pattern if the problem its answering is not yours.
 It means that applying a design pattern is not always necessary and simple code can works perfectly
 sometimes.
+
+2. In my opinion, using the builder pattern for the pizzas is a good idea because it avoids the use (and calls)
+of constructors with different set of toppings, especially if we think about an important number of pizzas.
+In addition, it also reduces the number of parameters that would have been created for each additional topping 
+we would have wanted to implement.
+
+3. A decorator pattern can be useful in a program that allows the user to calculate a car customization's price.
+It can basically begin with the car's model, its colour, and then adding new behaviours such as the wheel's size,
+the engine's power or the interior's cabin's colour.
